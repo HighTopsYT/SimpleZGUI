@@ -1,0 +1,1665 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local LoginScreen = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Username = Instance.new("TextBox")
+local Password = Instance.new("TextBox")
+local Login = Instance.new("TextButton")
+local Pattern = Instance.new("ImageLabel")
+local Exit = Instance.new("TextButton")
+local Menu = Instance.new("Frame")
+local GUIName = Instance.new("TextLabel")
+local Fly = Instance.new("TextButton")
+local SuperSpeed = Instance.new("TextButton")
+local Jump = Instance.new("TextButton")
+local InfiniteJump = Instance.new("TextButton")
+local Bar = Instance.new("Frame")
+local Buttons = Instance.new("ImageButton")
+local Home = Instance.new("ImageButton")
+local info = Instance.new("ImageButton")
+local ScriptHub = Instance.new("ImageButton")
+local Profile = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local Image2 = Instance.new("ImageLabel")
+local UICorner_2 = Instance.new("UICorner")
+local Image = Instance.new("ImageLabel")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabe3 = Instance.new("TextLabel")
+local TextLabel2 = Instance.new("TextLabel")
+local TextLabel5 = Instance.new("TextLabel")
+local UpdateLogTittle = Instance.new("TextLabel")
+local Line = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Text1 = Instance.new("TextLabel")
+local Text2 = Instance.new("TextLabel")
+local Text3 = Instance.new("TextLabel")
+local Text5 = Instance.new("TextLabel")
+local Text4 = Instance.new("TextLabel")
+local Versiontxt = Instance.new("TextLabel")
+local MadeBytxt = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+LoginScreen.Name = "LoginScreen"
+LoginScreen.Parent = ScreenGui
+LoginScreen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoginScreen.BorderSizePixel = 2
+LoginScreen.Position = UDim2.new(0.328947365, 0, 0.298192769, 0)
+LoginScreen.Size = UDim2.new(0, 442, 0, 265)
+
+TextLabel.Parent = LoginScreen
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.27375567, 0, 0.0264150947, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.ZIndex = 55555
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Login Screen"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 18.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(125, 125, 125)
+TextLabel.TextStrokeTransparency = 0.000
+TextLabel.TextWrapped = true
+
+Username.Name = "Username"
+Username.Parent = LoginScreen
+Username.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Username.BorderSizePixel = 2
+Username.Position = UDim2.new(0.27375567, 0, 0.249056593, 0)
+Username.Size = UDim2.new(0, 200, 0, 50)
+Username.ZIndex = 55555
+Username.ClearTextOnFocus = false
+Username.Font = Enum.Font.SourceSans
+Username.PlaceholderText = "Username"
+Username.Text = ""
+Username.TextColor3 = Color3.fromRGB(0, 0, 0)
+Username.TextScaled = true
+Username.TextSize = 14.000
+Username.TextWrapped = true
+
+Password.Name = "Password"
+Password.Parent = LoginScreen
+Password.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Password.BorderSizePixel = 2
+Password.Position = UDim2.new(0.27375567, 0, 0.505660415, 0)
+Password.Size = UDim2.new(0, 200, 0, 50)
+Password.ZIndex = 55555
+Password.ClearTextOnFocus = false
+Password.Font = Enum.Font.SourceSans
+Password.PlaceholderText = "Code"
+Password.Text = ""
+Password.TextColor3 = Color3.fromRGB(0, 0, 0)
+Password.TextScaled = true
+Password.TextSize = 14.000
+Password.TextWrapped = true
+
+Login.Name = "Login"
+Login.Parent = LoginScreen
+Login.BackgroundColor3 = Color3.fromRGB(6, 218, 91)
+Login.BorderSizePixel = 2
+Login.Position = UDim2.new(0.321266979, 0, 0.735849082, 0)
+Login.Size = UDim2.new(0, 159, 0, 37)
+Login.ZIndex = 55555
+Login.Font = Enum.Font.SourceSans
+Login.Text = "Login"
+Login.TextColor3 = Color3.fromRGB(0, 0, 0)
+Login.TextScaled = true
+Login.TextSize = 14.000
+Login.TextWrapped = true
+
+Pattern.Name = "Pattern"
+Pattern.Parent = LoginScreen
+Pattern.AnchorPoint = Vector2.new(0.5, 0.5)
+Pattern.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pattern.BackgroundTransparency = 1.000
+Pattern.Position = UDim2.new(0.5, 0, 0.499292463, 0)
+Pattern.Size = UDim2.new(0, 442, 0, 264)
+Pattern.ZIndex = 9
+Pattern.Image = "rbxassetid://2151758722"
+Pattern.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Pattern.ImageTransparency = 0.600
+Pattern.ScaleType = Enum.ScaleType.Tile
+Pattern.SliceCenter = Rect.new(0, 256, 0, 256)
+Pattern.TileSize = UDim2.new(0, 85, 0, 25)
+
+Exit.Name = "Exit"
+Exit.Parent = LoginScreen
+Exit.BackgroundColor3 = Color3.fromRGB(223, 0, 0)
+Exit.Position = UDim2.new(0.889140248, 0, 0.0264150947, 0)
+Exit.Size = UDim2.new(0, 41, 0, 40)
+Exit.ZIndex = 5555
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = "X"
+Exit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit.TextScaled = true
+Exit.TextSize = 14.000
+Exit.TextWrapped = true
+
+Menu.Name = "Menu"
+Menu.Parent = ScreenGui
+Menu.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+Menu.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Menu.Position = UDim2.new(0.633126855, 0, 0.591867447, 0)
+Menu.Size = UDim2.new(0, 442, 0, 217)
+Menu.Visible = false
+
+GUIName.Name = "GUIName"
+GUIName.Parent = Menu
+GUIName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GUIName.BackgroundTransparency = 1.000
+GUIName.Position = UDim2.new(0.29842931, 0, 0, 0)
+GUIName.Size = UDim2.new(0, 200, 0, 50)
+GUIName.Visible = false
+GUIName.ZIndex = 555
+GUIName.Font = Enum.Font.SourceSans
+GUIName.Text = "SimpleZ GUI"
+GUIName.TextColor3 = Color3.fromRGB(0, 0, 0)
+GUIName.TextScaled = true
+GUIName.TextSize = 14.000
+GUIName.TextWrapped = true
+
+Fly.Name = "Fly"
+Fly.Parent = Menu
+Fly.BackgroundColor3 = Color3.fromRGB(127, 127, 127)
+Fly.Position = UDim2.new(0.151832461, 0, 0.230414748, 0)
+Fly.Size = UDim2.new(0, 122, 0, 45)
+Fly.Visible = false
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = "Fly"
+Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fly.TextScaled = true
+Fly.TextSize = 14.000
+Fly.TextWrapped = true
+
+SuperSpeed.Name = "SuperSpeed"
+SuperSpeed.Parent = Menu
+SuperSpeed.BackgroundColor3 = Color3.fromRGB(127, 127, 127)
+SuperSpeed.Position = UDim2.new(0.151832461, 0, 0.594470024, 0)
+SuperSpeed.Size = UDim2.new(0, 122, 0, 45)
+SuperSpeed.Visible = false
+SuperSpeed.Font = Enum.Font.SourceSans
+SuperSpeed.Text = "SpeedBoost"
+SuperSpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+SuperSpeed.TextScaled = true
+SuperSpeed.TextSize = 14.000
+SuperSpeed.TextWrapped = true
+
+Jump.Name = "Jump"
+Jump.Parent = Menu
+Jump.BackgroundColor3 = Color3.fromRGB(127, 127, 127)
+Jump.Position = UDim2.new(0.63874346, 0, 0.594470024, 0)
+Jump.Size = UDim2.new(0, 122, 0, 45)
+Jump.Visible = false
+Jump.Font = Enum.Font.SourceSans
+Jump.Text = "JumpBoost"
+Jump.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jump.TextScaled = true
+Jump.TextSize = 14.000
+Jump.TextWrapped = true
+
+InfiniteJump.Name = "InfiniteJump"
+InfiniteJump.Parent = Menu
+InfiniteJump.BackgroundColor3 = Color3.fromRGB(127, 127, 127)
+InfiniteJump.Position = UDim2.new(0.63874346, 0, 0.230414748, 0)
+InfiniteJump.Size = UDim2.new(0, 122, 0, 45)
+InfiniteJump.Visible = false
+InfiniteJump.Font = Enum.Font.SourceSans
+InfiniteJump.Text = "InfiniteJump"
+InfiniteJump.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteJump.TextScaled = true
+InfiniteJump.TextSize = 14.000
+InfiniteJump.TextWrapped = true
+
+Bar.Name = "Bar"
+Bar.Parent = Menu
+Bar.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+Bar.Size = UDim2.new(0, 45, 0, 217)
+
+Buttons.Name = "Buttons"
+Buttons.Parent = Bar
+Buttons.Position = UDim2.new(0.13333334, 0, 0.207373261, 0)
+Buttons.Size = UDim2.new(0, 32, 0, 29)
+Buttons.ZIndex = 2
+Buttons.Image = "rbxassetid://3926305904"
+Buttons.ImageColor3 = Color3.fromRGB(79, 79, 79)
+Buttons.ImageRectOffset = Vector2.new(624, 4)
+Buttons.ImageRectSize = Vector2.new(36, 36)
+
+Home.Name = "Home"
+Home.Parent = Bar
+Home.LayoutOrder = 15
+Home.Position = UDim2.new(0.13333334, 0, 0.0168970823, 0)
+Home.Size = UDim2.new(0, 32, 0, 34)
+Home.ZIndex = 2
+Home.Image = "rbxassetid://3926307971"
+Home.ImageColor3 = Color3.fromRGB(79, 79, 79)
+Home.ImageRectOffset = Vector2.new(524, 364)
+Home.ImageRectSize = Vector2.new(36, 36)
+
+info.Name = "info"
+info.Parent = Bar
+info.Position = UDim2.new(0.111111119, 0, 0.57603687, 0)
+info.Size = UDim2.new(0, 35, 0, 35)
+info.ZIndex = 2
+info.Image = "rbxassetid://3926305904"
+info.ImageColor3 = Color3.fromRGB(111, 111, 111)
+info.ImageRectOffset = Vector2.new(524, 444)
+info.ImageRectSize = Vector2.new(36, 36)
+
+ScriptHub.Name = "ScriptHub"
+ScriptHub.Parent = Bar
+ScriptHub.Position = UDim2.new(0.13333334, 0, 0.391705066, 0)
+ScriptHub.Size = UDim2.new(0, 32, 0, 31)
+ScriptHub.ZIndex = 2
+ScriptHub.Image = "rbxassetid://3926307971"
+ScriptHub.ImageColor3 = Color3.fromRGB(81, 81, 81)
+ScriptHub.ImageRectOffset = Vector2.new(244, 364)
+ScriptHub.ImageRectSize = Vector2.new(36, 36)
+
+Profile.Name = "Profile"
+Profile.Parent = Menu
+Profile.BackgroundColor3 = Color3.fromRGB(31, 32, 32)
+Profile.BorderSizePixel = 0
+Profile.ClipsDescendants = true
+Profile.Position = UDim2.new(0.00498500466, 0, 0.791244328, 0)
+Profile.Size = UDim2.new(0, 39, 0, 39)
+
+UICorner.CornerRadius = UDim.new(0, 100)
+UICorner.Parent = Profile
+
+TextLabel_2.Parent = Menu
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.160180554, 0, 0.792626679, 0)
+TextLabel_2.Size = UDim2.new(0, 202, 0, 26)
+TextLabel_2.Font = Enum.Font.GothamSemibold
+TextLabel_2.Text = "Welcome to SimpleZ, Username."
+TextLabel_2.TextColor3 = Color3.fromRGB(184, 184, 184)
+TextLabel_2.TextSize = 20.000
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Image2.Name = "Image2"
+Image2.Parent = Menu
+Image2.BackgroundColor3 = Color3.fromRGB(31, 32, 32)
+Image2.BorderSizePixel = 0
+Image2.ClipsDescendants = true
+Image2.Position = UDim2.new(0.226704448, 0, 0.0585253984, 0)
+Image2.Size = UDim2.new(0, 110, 0, 111)
+Image2.Image = "rbxassetid://1885236780"
+Image2.ScaleType = Enum.ScaleType.Crop
+
+UICorner_2.CornerRadius = UDim.new(0, 100)
+UICorner_2.Parent = Image2
+
+Image.Name = "Image"
+Image.Parent = Menu
+Image.BackgroundColor3 = Color3.fromRGB(31, 32, 32)
+Image.BorderSizePixel = 0
+Image.ClipsDescendants = true
+Image.Position = UDim2.new(0.586432993, 0, 0.0585253984, 0)
+Image.Size = UDim2.new(0, 110, 0, 111)
+Image.Image = "rbxassetid://6517994028"
+
+UICorner_3.CornerRadius = UDim.new(0, 100)
+UICorner_3.Parent = Image
+
+TextLabe3.Name = "TextLabe3"
+TextLabe3.Parent = Menu
+TextLabe3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabe3.BackgroundTransparency = 1.000
+TextLabe3.BorderSizePixel = 0
+TextLabe3.Position = UDim2.new(0.194570139, 0, 0.566820264, 0)
+TextLabe3.Size = UDim2.new(0, 137, 0, 37)
+TextLabe3.Font = Enum.Font.SourceSans
+TextLabe3.Text = "Simple"
+TextLabe3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabe3.TextScaled = true
+TextLabe3.TextSize = 14.000
+TextLabe3.TextWrapped = true
+
+TextLabel2.Name = "TextLabel2"
+TextLabel2.Parent = Menu
+TextLabel2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel2.BackgroundTransparency = 1.000
+TextLabel2.BorderSizePixel = 0
+TextLabel2.Position = UDim2.new(0.427601814, 0, 0.566820264, 0)
+TextLabel2.Size = UDim2.new(0, 137, 0, 37)
+TextLabel2.Font = Enum.Font.SourceSans
+TextLabel2.Text = "Yet"
+TextLabel2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel2.TextScaled = true
+TextLabel2.TextSize = 14.000
+TextLabel2.TextWrapped = true
+
+TextLabel5.Name = "TextLabel5"
+TextLabel5.Parent = Menu
+TextLabel5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel5.BackgroundTransparency = 1.000
+TextLabel5.BorderSizePixel = 0
+TextLabel5.Position = UDim2.new(0.613122165, 0, 0.566820264, 0)
+TextLabel5.Size = UDim2.new(0, 137, 0, 37)
+TextLabel5.Font = Enum.Font.SourceSans
+TextLabel5.Text = "Powerful"
+TextLabel5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel5.TextScaled = true
+TextLabel5.TextSize = 14.000
+TextLabel5.TextWrapped = true
+
+UpdateLogTittle.Name = "UpdateLogTittle"
+UpdateLogTittle.Parent = Menu
+UpdateLogTittle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UpdateLogTittle.BackgroundTransparency = 1.000
+UpdateLogTittle.BorderSizePixel = 0
+UpdateLogTittle.Position = UDim2.new(0.303167433, 0, 0.230414763, 0)
+UpdateLogTittle.Size = UDim2.new(0, 200, 0, 36)
+UpdateLogTittle.Visible = false
+UpdateLogTittle.Font = Enum.Font.SourceSans
+UpdateLogTittle.Text = "Update Log"
+UpdateLogTittle.TextColor3 = Color3.fromRGB(0, 0, 0)
+UpdateLogTittle.TextScaled = true
+UpdateLogTittle.TextSize = 14.000
+UpdateLogTittle.TextWrapped = true
+
+Line.Name = "Line"
+Line.Parent = Menu
+Line.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Line.Position = UDim2.new(0.400452495, 0, 0.396313369, 0)
+Line.Size = UDim2.new(0, 113, 0, 3)
+Line.Visible = false
+
+ScrollingFrame.Parent = Menu
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(188, 188, 188)
+ScrollingFrame.Position = UDim2.new(0.26018101, 0, 0.43778801, 0)
+ScrollingFrame.Size = UDim2.new(0, 238, 0, 115)
+ScrollingFrame.Visible = false
+
+Text1.Name = "Text1"
+Text1.Parent = ScrollingFrame
+Text1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text1.BackgroundTransparency = 1.000
+Text1.BorderSizePixel = 0
+Text1.Position = UDim2.new(0.168067232, 0, 0.0180645343, 0)
+Text1.Size = UDim2.new(0, 157, 0, 20)
+Text1.Font = Enum.Font.SourceSans
+Text1.Text = "Added Home Tab"
+Text1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Text1.TextScaled = true
+Text1.TextSize = 14.000
+Text1.TextWrapped = true
+
+Text2.Name = "Text2"
+Text2.Parent = ScrollingFrame
+Text2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text2.BackgroundTransparency = 1.000
+Text2.BorderSizePixel = 0
+Text2.Position = UDim2.new(0.168067232, 0, 0.0641474873, 0)
+Text2.Size = UDim2.new(0, 157, 0, 20)
+Text2.Font = Enum.Font.SourceSans
+Text2.Text = "Added Cheat Tab"
+Text2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Text2.TextScaled = true
+Text2.TextSize = 14.000
+Text2.TextWrapped = true
+
+Text3.Name = "Text3"
+Text3.Parent = ScrollingFrame
+Text3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text3.BackgroundTransparency = 1.000
+Text3.BorderSizePixel = 0
+Text3.Position = UDim2.new(0.168067232, 0, 0.107926294, 0)
+Text3.Size = UDim2.new(0, 157, 0, 20)
+Text3.Font = Enum.Font.SourceSans
+Text3.Text = "Added Info Tab"
+Text3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Text3.TextScaled = true
+Text3.TextSize = 14.000
+Text3.TextWrapped = true
+
+Text5.Name = "Text5"
+Text5.Parent = ScrollingFrame
+Text5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text5.BackgroundTransparency = 1.000
+Text5.BorderSizePixel = 0
+Text5.Position = UDim2.new(0.168067232, 0, 0.200092182, 0)
+Text5.Size = UDim2.new(0, 157, 0, 20)
+Text5.Font = Enum.Font.SourceSans
+Text5.Text = "Added UI"
+Text5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Text5.TextScaled = true
+Text5.TextSize = 14.000
+Text5.TextWrapped = true
+
+Text4.Name = "Text4"
+Text4.Parent = ScrollingFrame
+Text4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text4.BackgroundTransparency = 1.000
+Text4.BorderSizePixel = 0
+Text4.Position = UDim2.new(0.168067232, 0, 0.154009223, 0)
+Text4.Size = UDim2.new(0, 157, 0, 20)
+Text4.Font = Enum.Font.SourceSans
+Text4.Text = "Added New Cheats"
+Text4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Text4.TextScaled = true
+Text4.TextSize = 14.000
+Text4.TextWrapped = true
+
+Versiontxt.Name = "Versiontxt"
+Versiontxt.Parent = Menu
+Versiontxt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Versiontxt.BackgroundTransparency = 1.000
+Versiontxt.Position = UDim2.new(0.837104082, 0, 0.741935492, 0)
+Versiontxt.Size = UDim2.new(0, 53, 0, 47)
+Versiontxt.Visible = false
+Versiontxt.Font = Enum.Font.SourceSans
+Versiontxt.Text = "1.2"
+Versiontxt.TextColor3 = Color3.fromRGB(0, 0, 0)
+Versiontxt.TextScaled = true
+Versiontxt.TextSize = 14.000
+Versiontxt.TextWrapped = true
+
+MadeBytxt.Name = "MadeBytxt"
+MadeBytxt.Parent = Menu
+MadeBytxt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MadeBytxt.BackgroundTransparency = 1.000
+MadeBytxt.Position = UDim2.new(0.371040732, 0, 0.0138248848, 0)
+MadeBytxt.Size = UDim2.new(0, 140, 0, 44)
+MadeBytxt.Visible = false
+MadeBytxt.Font = Enum.Font.SourceSans
+MadeBytxt.Text = "Made By hopefulsmile24"
+MadeBytxt.TextColor3 = Color3.fromRGB(0, 0, 0)
+MadeBytxt.TextScaled = true
+MadeBytxt.TextSize = 14.000
+MadeBytxt.TextWrapped = true
+
+-- Scripts:
+
+local function QALUAVL_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local t = 5;
+	
+	while wait() do
+		local hue = tick() % t / t
+		local color = Color3.fromHSV(hue,1,1) 
+		script.Parent.TextStrokeColor3 = color
+	end
+end
+coroutine.wrap(QALUAVL_fake_script)()
+local function FWLRO_fake_script() -- Login.LocalScript 
+	local script = Instance.new('LocalScript', Login)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Name = game.Players.LocalPlayer.Name
+		if script.Parent.Parent.Username.Text == Name and script.Parent.Parent.Password.Text == "4BA8367L" then
+			script.Parent.Parent.Visible = false
+			game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Login Notification", Text = "Login Successful!"})
+			wait(6)
+			game:GetService("StarterGui"):SetCore("SendNotification", {Title = "GUI Notification", Text = "Loading GUI"})
+			wait(6)
+			game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Thank You For Useing My Cheat!"})
+			wait(6.5)
+			script.Parent.Parent.Parent.Menu.Visible = true
+		end
+	end)
+	
+end
+coroutine.wrap(FWLRO_fake_script)()
+local function YHGRSP_fake_script() -- Exit.LocalScript 
+	local script = Instance.new('LocalScript', Exit)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(YHGRSP_fake_script)()
+local function KRWIRA_fake_script() -- GUIName.LocalScript 
+	local script = Instance.new('LocalScript', GUIName)
+
+	local t = 5;
+	
+	while wait() do
+		local hue = tick() % t / t
+		local color = Color3.fromHSV(hue,1,1) 
+		script.Parent.TextColor3 = color
+	end
+end
+coroutine.wrap(KRWIRA_fake_script)()
+local function RIQQ_fake_script() -- Fly.LocalScript 
+	local script = Instance.new('LocalScript', Fly)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(28, 230, 28)
+		_G.FLYING = false
+		local LP = game:service('Players').LocalPlayer
+		local T = LP.Character.UpperTorso
+		local CONTROL = {F = 0, B = 0, L = 0, R = 0}
+		local lCONTROL = {F = 0, B = 0, L = 0, R = 0}
+		local SPEED = 5
+		local MOUSE = LP:GetMouse()
+	
+	
+		local function FLY()
+			_G.FLYING = true
+			local BG = Instance.new('BodyGyro', T)
+			local BV = Instance.new('BodyVelocity', T)
+			BG.P = 9e4
+			BG.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+			BG.cframe = T.CFrame
+			BV.velocity = Vector3.new(0, 0.1, 0)
+			BV.maxForce = Vector3.new(9e9, 9e9, 9e9)
+	
+	
+			spawn(function()
+				repeat wait()
+					LP.Character.Humanoid.PlatformStand = true
+					if CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0 then
+						SPEED = 50
+					elseif not (CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0) and SPEED ~= 0 then
+						SPEED = 0
+					end
+					if (CONTROL.L + CONTROL.R) ~= 0 or (CONTROL.F + CONTROL.B) ~= 0 then
+						BV.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (CONTROL.F + CONTROL.B)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(CONTROL.L + CONTROL.R, (CONTROL.F + CONTROL.B) * 0.2, 0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
+						lCONTROL = {F = CONTROL.F, B = CONTROL.B, L = CONTROL.L, R = CONTROL.R}
+					elseif (CONTROL.L + CONTROL.R) == 0 and (CONTROL.F + CONTROL.B) == 0 and SPEED ~= 0 then
+						BV.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lCONTROL.F + lCONTROL.B)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lCONTROL.L + lCONTROL.R, (lCONTROL.F + lCONTROL.B) * 0.2, 0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
+					else
+						BV.velocity = Vector3.new(0, 0.1, 0)
+					end
+					BG.cframe = game.Workspace.CurrentCamera.CoordinateFrame
+				until not _G.FLYING
+				CONTROL = {F = 0, B = 0, L = 0, R = 0}
+				lCONTROL = {F = 0, B = 0, L = 0, R = 0}
+				SPEED = 0
+				BG:destroy()
+				BV:destroy()
+				LP.Character.Humanoid.PlatformStand = false
+			end)
+		end
+	
+		MOUSE.KeyDown:connect(function(KEY)
+			if KEY:lower() == 'w' then
+				CONTROL.F = 1
+			elseif KEY:lower() == 's' then
+				CONTROL.B = -1
+			elseif KEY:lower() == 'a' then
+				CONTROL.L = -1 
+			elseif KEY:lower() == 'd' then 
+				CONTROL.R = 1
+			end
+		end)
+	
+		MOUSE.KeyUp:connect(function(KEY)
+			if KEY:lower() == 'w' then
+				CONTROL.F = 0
+			elseif KEY:lower() == 's' then
+				CONTROL.B = 0
+			elseif KEY:lower() == 'a' then
+				CONTROL.L = 0
+			elseif KEY:lower() == 'd' then
+				CONTROL.R = 0
+			end
+		end)
+	
+	
+	
+	
+		FLY()
+	end)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	script.Parent.MouseButton2Click:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(127, 127, 127)
+		_G.FLYING = false
+		local LP = game:service('Players').LocalPlayer
+		local T = LP.Character.UpperTorso
+		local CONTROL = {F = 0, B = 0, L = 0, R = 0}
+		local lCONTROL = {F = 0, B = 0, L = 0, R = 0}
+		local SPEED = 5
+		local MOUSE = LP:GetMouse()
+	
+	
+		local function FLY()
+			_G.FLYING = true
+			local BG = Instance.new('BodyGyro', T)
+			local BV = Instance.new('BodyVelocity', T)
+			BG.P = 9e4
+			BG.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+			BG.cframe = T.CFrame
+			BV.velocity = Vector3.new(0, 0.1, 0)
+			BV.maxForce = Vector3.new(9e9, 9e9, 9e9)
+	
+	
+			spawn(function()
+				repeat wait()
+					LP.Character.Humanoid.PlatformStand = true
+					if CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0 then
+						SPEED = 50
+					elseif not (CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0) and SPEED ~= 0 then
+						SPEED = 0
+					end
+					if (CONTROL.L + CONTROL.R) ~= 0 or (CONTROL.F + CONTROL.B) ~= 0 then
+						BV.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (CONTROL.F + CONTROL.B)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(CONTROL.L + CONTROL.R, (CONTROL.F + CONTROL.B) * 0.2, 0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
+						lCONTROL = {F = CONTROL.F, B = CONTROL.B, L = CONTROL.L, R = CONTROL.R}
+					elseif (CONTROL.L + CONTROL.R) == 0 and (CONTROL.F + CONTROL.B) == 0 and SPEED ~= 0 then
+						BV.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lCONTROL.F + lCONTROL.B)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lCONTROL.L + lCONTROL.R, (lCONTROL.F + lCONTROL.B) * 0.2, 0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
+					else
+						BV.velocity = Vector3.new(0, 0.1, 0)
+					end
+					BG.cframe = game.Workspace.CurrentCamera.CoordinateFrame
+				until not _G.FLYING
+				CONTROL = {F = 0, B = 0, L = 0, R = 0}
+				lCONTROL = {F = 0, B = 0, L = 0, R = 0}
+				SPEED = 0
+				BG:destroy()
+				BV:destroy()
+				LP.Character.Humanoid.PlatformStand = false
+			end)
+		end
+	
+		MOUSE.KeyDown:connect(function(KEY)
+			if KEY:lower() == 'w' then
+				CONTROL.F = 1
+			elseif KEY:lower() == 's' then
+				CONTROL.B = -1
+			elseif KEY:lower() == 'a' then
+				CONTROL.L = -1 
+			elseif KEY:lower() == 'd' then 
+				CONTROL.R = 1
+			end
+		end)
+	
+		MOUSE.KeyUp:connect(function(KEY)
+			if KEY:lower() == 'w' then
+				CONTROL.F = 0
+			elseif KEY:lower() == 's' then
+				CONTROL.B = 0
+			elseif KEY:lower() == 'a' then
+				CONTROL.L = 0
+			elseif KEY:lower() == 'd' then
+				CONTROL.R = 0
+			end
+		end)
+	
+	
+	
+	
+		FLY()
+		_G.FLYING = false
+	end)
+	
+	
+end
+coroutine.wrap(RIQQ_fake_script)()
+local function NRES_fake_script() -- SuperSpeed.LocalScript 
+	local script = Instance.new('LocalScript', SuperSpeed)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(28, 230, 28)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 55
+	end)
+	
+	script.Parent.MouseButton2Click:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(127, 127, 127)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+	end)
+	
+end
+coroutine.wrap(NRES_fake_script)()
+local function PCKH_fake_script() -- Jump.LocalScript 
+	local script = Instance.new('LocalScript', Jump)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(28, 230, 28)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 150
+	end)
+	
+	script.Parent.MouseButton2Click:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(127, 127, 127)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+	end)
+	
+end
+coroutine.wrap(PCKH_fake_script)()
+local function RZHMSMO_fake_script() -- InfiniteJump.LocalScript 
+	local script = Instance.new('LocalScript', InfiniteJump)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		
+		InfiniteJumpEnabled = true
+		script.Parent.BackgroundColor3 = Color3.fromRGB(28, 230, 28)
+		game:GetService("UserInputService").JumpRequest:connect(function()
+			if InfiniteJumpEnabled then
+				game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+			end
+		end)
+	end)
+	
+	script.Parent.MouseButton2Click:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(127, 127, 127)
+		InfiniteJumpEnabled = false
+		game:GetService("UserInputService").JumpRequest:connect(function()
+			if InfiniteJumpEnabled then
+				game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+			end
+		end)
+	end)
+	
+	
+	
+	
+	
+	
+end
+coroutine.wrap(RZHMSMO_fake_script)()
+local function PIDTD_fake_script() -- Menu.LocalScript 
+	local script = Instance.new('LocalScript', Menu)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(PIDTD_fake_script)()
+local function HMQL_fake_script() -- Buttons.LocalScript 
+	local script = Instance.new('LocalScript', Buttons)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Fly.Visible = true
+		script.Parent.Parent.Parent.Jump.Visible = true
+		script.Parent.Parent.Parent.SuperSpeed.Visible = true
+		script.Parent.Parent.Parent.InfiniteJump.Visible = true
+		script.Parent.Parent.Parent.GUIName.Visible = true
+		script.Parent.Parent.Parent.TextLabel.Visible = false
+		script.Parent.Parent.Parent.Image.Visible = false
+		script.Parent.Parent.Parent.Image2.Visible = false
+		script.Parent.Parent.Parent.TextLabe3.Visible = false
+		script.Parent.Parent.Parent.TextLabel2.Visible = false
+		script.Parent.Parent.Parent.TextLabel5.Visible = false
+		script.Parent.Parent.Parent.ScrollingFrame.Visible = false
+		script.Parent.Parent.Parent.UpdateLogTittle.Visible = false
+		script.Parent.Parent.Parent.MadeBytxt.Visible = false
+		script.Parent.Parent.Parent.Versiontxt.Visible = false
+		script.Parent.Parent.Parent.ScrollingFrame.Visible = false
+		script.Parent.Parent.Parent.Line.Visible = false
+	end)
+end
+coroutine.wrap(HMQL_fake_script)()
+local function CCLXBMQ_fake_script() -- Home.LocalScript 
+	local script = Instance.new('LocalScript', Home)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Fly.Visible = false
+		script.Parent.Parent.Parent.Jump.Visible = false
+		script.Parent.Parent.Parent.SuperSpeed.Visible = false
+		script.Parent.Parent.Parent.InfiniteJump.Visible = false
+		script.Parent.Parent.Parent.GUIName.Visible = false
+		script.Parent.Parent.Parent.TextLabel.Visible = true
+		script.Parent.Parent.Parent.TextLabel.Visible = true
+		script.Parent.Parent.Parent.TextLabel2.Visible = true
+		script.Parent.Parent.Parent.TextLabe3.Visible = true
+		script.Parent.Parent.Parent.Image2.Visible = true
+		script.Parent.Parent.Parent.Image.Visible = true
+		script.Parent.Parent.Parent.TextLabel5.Visible = true
+		script.Parent.Parent.Parent.ScrollingFrame.Visible = false
+		script.Parent.Parent.Parent.UpdateLogTittle.Visible = false
+		script.Parent.Parent.Parent.MadeBytxt.Visible = false
+		script.Parent.Parent.Parent.Versiontxt.Visible = false
+		script.Parent.Parent.Parent.ScrollingFrame.Visible = false
+		script.Parent.Parent.Parent.Line.Visible = false
+	end)
+end
+coroutine.wrap(CCLXBMQ_fake_script)()
+local function PLTDSYN_fake_script() -- info.LocalScript 
+	local script = Instance.new('LocalScript', info)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Fly.Visible = false
+		script.Parent.Parent.Parent.Jump.Visible = false
+		script.Parent.Parent.Parent.SuperSpeed.Visible = false
+		script.Parent.Parent.Parent.InfiniteJump.Visible = false
+		script.Parent.Parent.Parent.GUIName.Visible = false
+		script.Parent.Parent.Parent.TextLabel.Visible = false
+		script.Parent.Parent.Parent.TextLabel.Visible = false
+		script.Parent.Parent.Parent.TextLabel2.Visible = false
+		script.Parent.Parent.Parent.TextLabe3.Visible = false
+		script.Parent.Parent.Parent.Image2.Visible = false
+		script.Parent.Parent.Parent.Image.Visible = false
+		script.Parent.Parent.Parent.TextLabel5.Visible = false
+		script.Parent.Parent.Parent.ScrollingFrame.Visible = true
+		script.Parent.Parent.Parent.UpdateLogTittle.Visible = true
+		script.Parent.Parent.Parent.MadeBytxt.Visible = true
+		script.Parent.Parent.Parent.Versiontxt.Visible = true
+		script.Parent.Parent.Parent.ScrollingFrame.Visible = true
+		script.Parent.Parent.Parent.Line.Visible = true
+	end)
+end
+coroutine.wrap(PLTDSYN_fake_script)()
+local function DKRBBV_fake_script() -- ScriptHub.LocalScript 
+	local script = Instance.new('LocalScript', ScriptHub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local TB = script.Parent
+		-- Instances:
+	
+		local Launcher = {
+			Launcher = Instance.new("ScreenGui"),
+			MainFrame = Instance.new("Frame"),
+			UICorner = Instance.new("UICorner"),
+			SideFrame = Instance.new("Frame"),
+			PlayerPicture = Instance.new("ImageLabel"),
+			ImageLabel = Instance.new("ImageLabel"),
+			Close = Instance.new("ImageButton"),
+			LaunchPage = Instance.new("Frame"),
+			Frame = Instance.new("Frame"),
+			UICorner_2 = Instance.new("UICorner"),
+			Image = Instance.new("ImageButton"),
+			SettingPage = Instance.new("Frame"),
+			Frame_2 = Instance.new("Frame"),
+			UICorner_3 = Instance.new("UICorner"),
+			Image_2 = Instance.new("ImageButton"),
+			AnimFrame2 = Instance.new("Frame"),
+			TextLabel = Instance.new("TextLabel"),
+			AnimFrame1 = Instance.new("Frame"),
+			EzHubSection = Instance.new("Frame"),
+			SectionEs = Instance.new("Folder"),
+			Frame_3 = Instance.new("Frame"),
+			UICorner_4 = Instance.new("UICorner"),
+			Frame_4 = Instance.new("Frame"),
+			TextLabel_2 = Instance.new("TextLabel"),
+			UICorner_5 = Instance.new("UICorner"),
+			VersionSelectorEzHub = Instance.new("Frame"),
+			Left = Instance.new("TextButton"),
+			Right = Instance.new("TextButton"),
+			Display = Instance.new("TextButton"),
+			LaunchEzHub = Instance.new("TextButton"),
+			UICorner_6 = Instance.new("UICorner"),
+			ServerStatusSection = Instance.new("Frame"),
+			SectionEs_2 = Instance.new("Folder"),
+			Frame_5 = Instance.new("Frame"),
+			UICorner_7 = Instance.new("UICorner"),
+			Frame_6 = Instance.new("Frame"),
+			TextLabel_3 = Instance.new("TextLabel"),
+			TextLabel_4 = Instance.new("TextLabel"),
+			TextLabel_5 = Instance.new("TextLabel"),
+			UICorner_8 = Instance.new("UICorner"),
+			EzCMDStatus = Instance.new("TextLabel"),
+			EzHubStatus = Instance.new("TextLabel"),
+			EzCMDSection = Instance.new("Frame"),
+			SectionEs_3 = Instance.new("Folder"),
+			Frame_7 = Instance.new("Frame"),
+			UICorner_9 = Instance.new("UICorner"),
+			Frame_8 = Instance.new("Frame"),
+			TextLabel_6 = Instance.new("TextLabel"),
+			UICorner_10 = Instance.new("UICorner"),
+			LaunchEzCMD = Instance.new("TextButton"),
+			UICorner_11 = Instance.new("UICorner"),
+			VersionSelectorEzCMD = Instance.new("Frame"),
+			Left_2 = Instance.new("TextButton"),
+			Display_2 = Instance.new("TextButton"),
+			Right_2 = Instance.new("TextButton"),
+		}
+	
+		--Properties:
+	
+		Launcher.Launcher.Name = "Launcher"
+		Launcher.Launcher.Parent = game.CoreGui
+		Launcher.Launcher.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	
+		Launcher.MainFrame.Name = "MainFrame"
+		Launcher.MainFrame.Parent = Launcher.Launcher
+		Launcher.MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+		Launcher.MainFrame.BackgroundColor3 = Color3.fromRGB(41, 53, 68)
+		Launcher.MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+		Launcher.MainFrame.Size = UDim2.new(0, 410, 0, 278)
+	
+		Launcher.UICorner.CornerRadius = UDim.new(0, 4)
+		Launcher.UICorner.Parent = Launcher.MainFrame
+	
+		Launcher.SideFrame.Name = "SideFrame"
+		Launcher.SideFrame.Parent = Launcher.MainFrame
+		Launcher.SideFrame.BackgroundColor3 = Color3.fromRGB(28, 41, 56)
+		Launcher.SideFrame.BorderSizePixel = 0
+		Launcher.SideFrame.Size = UDim2.new(0, 69, 0, 278)
+	
+		Launcher.PlayerPicture.Name = "PlayerPicture"
+		Launcher.PlayerPicture.Parent = Launcher.SideFrame
+		Launcher.PlayerPicture.AnchorPoint = Vector2.new(0.5, 0.5)
+		Launcher.PlayerPicture.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.PlayerPicture.BackgroundTransparency = 1.000
+		Launcher.PlayerPicture.BorderSizePixel = 0
+		Launcher.PlayerPicture.Position = UDim2.new(0.5, 0, 0, 35)
+		Launcher.PlayerPicture.Size = UDim2.new(0, 45, 0, 45)
+		Launcher.PlayerPicture.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+	
+		Launcher.ImageLabel.Parent = Launcher.PlayerPicture
+		Launcher.ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+		Launcher.ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.ImageLabel.BackgroundTransparency = 1.000
+		Launcher.ImageLabel.BorderSizePixel = 0
+		Launcher.ImageLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+		Launcher.ImageLabel.Size = UDim2.new(1, 0, 1, 0)
+		Launcher.ImageLabel.Image = "rbxassetid://4031889928"
+		Launcher.ImageLabel.ImageColor3 = Color3.fromRGB(28, 41, 56)
+	
+		Launcher.Close.Name = "Close"
+		Launcher.Close.Parent = Launcher.SideFrame
+		Launcher.Close.AnchorPoint = Vector2.new(0.5, 0.5)
+		Launcher.Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.Close.BackgroundTransparency = 1.000
+		Launcher.Close.Position = UDim2.new(0.5, 0, 0.306295037, 0)
+		Launcher.Close.Size = UDim2.new(0, 16, 0, 16)
+		Launcher.Close.Image = "http://www.roblox.com/asset/?id=5679295310"
+		Launcher.Close.ImageColor3 = Color3.fromRGB(211, 216, 226)
+	
+		Launcher.LaunchPage.Name = "LaunchPage"
+		Launcher.LaunchPage.Parent = Launcher.SideFrame
+		Launcher.LaunchPage.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
+		Launcher.LaunchPage.BorderSizePixel = 0
+		Launcher.LaunchPage.Position = UDim2.new(0, 0, 0.410071939, 0)
+		Launcher.LaunchPage.Size = UDim2.new(1, 0, 0, 50)
+	
+		Launcher.Frame.Parent = Launcher.LaunchPage
+		Launcher.Frame.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+		Launcher.Frame.Size = UDim2.new(0, 2, 1, 0)
+	
+		Launcher.UICorner_2.Parent = Launcher.Frame
+	
+		Launcher.Image.Name = "Image"
+		Launcher.Image.Parent = Launcher.LaunchPage
+		Launcher.Image.AnchorPoint = Vector2.new(0.5, 0.5)
+		Launcher.Image.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.Image.BackgroundTransparency = 1.000
+		Launcher.Image.Position = UDim2.new(0.5, 0, 0.5, 0)
+		Launcher.Image.Size = UDim2.new(0, 22, 0, 22)
+		Launcher.Image.Image = "http://www.roblox.com/asset/?id=2876994160"
+	
+		Launcher.SettingPage.Name = "SettingPage"
+		Launcher.SettingPage.Parent = Launcher.SideFrame
+		Launcher.SettingPage.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
+		Launcher.SettingPage.BackgroundTransparency = 1.000
+		Launcher.SettingPage.BorderSizePixel = 0
+		Launcher.SettingPage.Position = UDim2.new(0, 0, 0.587769806, 0)
+		Launcher.SettingPage.Size = UDim2.new(1, 0, 0, 50)
+	
+		Launcher.Frame_2.Parent = Launcher.SettingPage
+		Launcher.Frame_2.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+		Launcher.Frame_2.Size = UDim2.new(0, 2, 1, 0)
+		Launcher.Frame_2.Visible = false
+	
+		Launcher.UICorner_3.Parent = Launcher.Frame_2
+	
+		Launcher.Image_2.Name = "Image"
+		Launcher.Image_2.Parent = Launcher.SettingPage
+		Launcher.Image_2.AnchorPoint = Vector2.new(0.5, 0.5)
+		Launcher.Image_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.Image_2.BackgroundTransparency = 1.000
+		Launcher.Image_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+		Launcher.Image_2.Size = UDim2.new(0, 15, 0, 15)
+		Launcher.Image_2.Image = "http://www.roblox.com/asset/?id=4492476121"
+	
+		Launcher.AnimFrame2.Name = "AnimFrame2"
+		Launcher.AnimFrame2.Parent = Launcher.MainFrame
+		Launcher.AnimFrame2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.AnimFrame2.BackgroundTransparency = 1.000
+		Launcher.AnimFrame2.Position = UDim2.new(0.168292686, 0, 0, 0)
+		Launcher.AnimFrame2.Size = UDim2.new(0, 341, 0, 278)
+		Launcher.AnimFrame2.Visible = false
+	
+		Launcher.TextLabel.Parent = Launcher.AnimFrame2
+		Launcher.TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+		Launcher.TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.TextLabel.BackgroundTransparency = 1.000
+		Launcher.TextLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+		Launcher.TextLabel.Size = UDim2.new(0, 200, 0, 50)
+		Launcher.TextLabel.Font = Enum.Font.SourceSans
+		Launcher.TextLabel.Text = "This feature is not done yet"
+		Launcher.TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.TextLabel.TextSize = 20.000
+	
+		Launcher.AnimFrame1.Name = "AnimFrame1"
+		Launcher.AnimFrame1.Parent = Launcher.MainFrame
+		Launcher.AnimFrame1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.AnimFrame1.BackgroundTransparency = 1.000
+		Launcher.AnimFrame1.Position = UDim2.new(0.168292686, 0, 0, 0)
+		Launcher.AnimFrame1.Size = UDim2.new(0, 341, 0, 278)
+		Launcher.AnimFrame1.Visible = false
+	
+		Launcher.EzHubSection.Name = "EzHubSection"
+		Launcher.EzHubSection.Parent = Launcher.AnimFrame1
+		Launcher.EzHubSection.AnchorPoint = Vector2.new(0.5, 0.5)
+		Launcher.EzHubSection.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
+		Launcher.EzHubSection.BorderSizePixel = 0
+		Launcher.EzHubSection.Position = UDim2.new(0.260997087, 0, 0.696402788, 0)
+		Launcher.EzHubSection.Size = UDim2.new(0, 150, 0, 116)
+	
+		Launcher.SectionEs.Name = "SectionEs"
+		Launcher.SectionEs.Parent = Launcher.EzHubSection
+	
+		Launcher.Frame_3.Parent = Launcher.SectionEs
+		Launcher.Frame_3.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+		Launcher.Frame_3.Size = UDim2.new(0, 2, 0, 36)
+	
+		Launcher.UICorner_4.Parent = Launcher.Frame_3
+	
+		Launcher.Frame_4.Parent = Launcher.SectionEs
+		Launcher.Frame_4.BackgroundColor3 = Color3.fromRGB(112, 112, 112)
+		Launcher.Frame_4.BackgroundTransparency = 0.750
+		Launcher.Frame_4.BorderSizePixel = 0
+		Launcher.Frame_4.Position = UDim2.new(0, 0, 0.294290125, 0)
+		Launcher.Frame_4.Size = UDim2.new(1, 0, 0, 1)
+	
+		Launcher.TextLabel_2.Parent = Launcher.SectionEs
+		Launcher.TextLabel_2.AnchorPoint = Vector2.new(1, 0)
+		Launcher.TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.TextLabel_2.BackgroundTransparency = 1.000
+		Launcher.TextLabel_2.Position = UDim2.new(1, 0, 0.0439999998, 0)
+		Launcher.TextLabel_2.Size = UDim2.new(0.899999976, 0, 0, 24)
+		Launcher.TextLabel_2.Font = Enum.Font.SourceSans
+		Launcher.TextLabel_2.Text = "Ez Hub"
+		Launcher.TextLabel_2.TextColor3 = Color3.fromRGB(211, 216, 226)
+		Launcher.TextLabel_2.TextSize = 14.000
+		Launcher.TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+	
+		Launcher.UICorner_5.CornerRadius = UDim.new(0, 4)
+		Launcher.UICorner_5.Parent = Launcher.EzHubSection
+	
+		Launcher.VersionSelectorEzHub.Name = "VersionSelectorEzHub"
+		Launcher.VersionSelectorEzHub.Parent = Launcher.EzHubSection
+		Launcher.VersionSelectorEzHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.VersionSelectorEzHub.BackgroundTransparency = 1.000
+		Launcher.VersionSelectorEzHub.Position = UDim2.new(0, 10, 0.414000005, 0)
+		Launcher.VersionSelectorEzHub.Size = UDim2.new(0, 86, 0, 28)
+	
+		Launcher.Left.Name = "Left"
+		Launcher.Left.Parent = Launcher.VersionSelectorEzHub
+		Launcher.Left.AnchorPoint = Vector2.new(0, 0.5)
+		Launcher.Left.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.Left.BackgroundTransparency = 1.000
+		Launcher.Left.Position = UDim2.new(0, 0, 0.5, 0)
+		Launcher.Left.Size = UDim2.new(0, 20, 0, 20)
+		Launcher.Left.Font = Enum.Font.SourceSans
+		Launcher.Left.Text = "<"
+		Launcher.Left.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.Left.TextSize = 14.000
+	
+		Launcher.Right.Name = "Right"
+		Launcher.Right.Parent = Launcher.VersionSelectorEzHub
+		Launcher.Right.AnchorPoint = Vector2.new(1, 0.5)
+		Launcher.Right.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.Right.BackgroundTransparency = 1.000
+		Launcher.Right.Position = UDim2.new(1, 0, 0.5, 0)
+		Launcher.Right.Size = UDim2.new(0, 20, 0, 20)
+		Launcher.Right.Font = Enum.Font.SourceSans
+		Launcher.Right.Text = ">"
+		Launcher.Right.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.Right.TextSize = 14.000
+	
+		Launcher.Display.Name = "Display"
+		Launcher.Display.Parent = Launcher.VersionSelectorEzHub
+		Launcher.Display.AnchorPoint = Vector2.new(0.5, 0.5)
+		Launcher.Display.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.Display.BackgroundTransparency = 1.000
+		Launcher.Display.Position = UDim2.new(0.5, 0, 0.5, 0)
+		Launcher.Display.Size = UDim2.new(0, 55, 0, 20)
+		Launcher.Display.Font = Enum.Font.SourceSans
+		Launcher.Display.Text = "V 3.3"
+		Launcher.Display.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.Display.TextSize = 14.000
+	
+		Launcher.LaunchEzHub.Name = "LaunchEzHub"
+		Launcher.LaunchEzHub.Parent = Launcher.EzHubSection
+		Launcher.LaunchEzHub.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+		Launcher.LaunchEzHub.Position = UDim2.new(0, 10, 0.720000029, 0)
+		Launcher.LaunchEzHub.Size = UDim2.new(0, 86, 0, 22)
+		Launcher.LaunchEzHub.Font = Enum.Font.SourceSans
+		Launcher.LaunchEzHub.Text = "Launch"
+		Launcher.LaunchEzHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.LaunchEzHub.TextSize = 14.000
+	
+		Launcher.UICorner_6.CornerRadius = UDim.new(0, 4)
+		Launcher.UICorner_6.Parent = Launcher.LaunchEzHub
+	
+		Launcher.ServerStatusSection.Name = "ServerStatusSection"
+		Launcher.ServerStatusSection.Parent = Launcher.AnimFrame1
+		Launcher.ServerStatusSection.AnchorPoint = Vector2.new(0.5, 0.5)
+		Launcher.ServerStatusSection.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
+		Launcher.ServerStatusSection.BorderSizePixel = 0
+		Launcher.ServerStatusSection.Position = UDim2.new(0.5, 0, 0.0701438859, 50)
+		Launcher.ServerStatusSection.Size = UDim2.new(0, 312, 0, 116)
+	
+		Launcher.SectionEs_2.Name = "SectionEs"
+		Launcher.SectionEs_2.Parent = Launcher.ServerStatusSection
+	
+		Launcher.Frame_5.Parent = Launcher.SectionEs_2
+		Launcher.Frame_5.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+		Launcher.Frame_5.Size = UDim2.new(0, 2, 0, 36)
+	
+		Launcher.UICorner_7.Parent = Launcher.Frame_5
+	
+		Launcher.Frame_6.Parent = Launcher.SectionEs_2
+		Launcher.Frame_6.BackgroundColor3 = Color3.fromRGB(112, 112, 112)
+		Launcher.Frame_6.BackgroundTransparency = 0.750
+		Launcher.Frame_6.BorderSizePixel = 0
+		Launcher.Frame_6.Position = UDim2.new(0, 0, 0.294290125, 0)
+		Launcher.Frame_6.Size = UDim2.new(1, 0, 0, 1)
+	
+		Launcher.TextLabel_3.Parent = Launcher.SectionEs_2
+		Launcher.TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.TextLabel_3.BackgroundTransparency = 1.000
+		Launcher.TextLabel_3.Position = UDim2.new(0.0416666679, 0, 0.0435512774, 0)
+		Launcher.TextLabel_3.Size = UDim2.new(0, 299, 0, 24)
+		Launcher.TextLabel_3.Font = Enum.Font.SourceSans
+		Launcher.TextLabel_3.Text = "Server Status"
+		Launcher.TextLabel_3.TextColor3 = Color3.fromRGB(211, 216, 226)
+		Launcher.TextLabel_3.TextSize = 14.000
+		Launcher.TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+	
+		Launcher.TextLabel_4.Parent = Launcher.ServerStatusSection
+		Launcher.TextLabel_4.AnchorPoint = Vector2.new(0.5, 0.5)
+		Launcher.TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.TextLabel_4.BackgroundTransparency = 1.000
+		Launcher.TextLabel_4.Position = UDim2.new(0.699999988, 0, 0.5, 0)
+		Launcher.TextLabel_4.Size = UDim2.new(0, 50, 0, 30)
+		Launcher.TextLabel_4.Font = Enum.Font.SourceSans
+		Launcher.TextLabel_4.Text = "Ez CMD"
+		Launcher.TextLabel_4.TextColor3 = Color3.fromRGB(92, 106, 124)
+		Launcher.TextLabel_4.TextSize = 14.000
+	
+		Launcher.TextLabel_5.Parent = Launcher.ServerStatusSection
+		Launcher.TextLabel_5.AnchorPoint = Vector2.new(0.5, 0.5)
+		Launcher.TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.TextLabel_5.BackgroundTransparency = 1.000
+		Launcher.TextLabel_5.Position = UDim2.new(0.300000012, 0, 0.5, 0)
+		Launcher.TextLabel_5.Size = UDim2.new(0, 50, 0, 30)
+		Launcher.TextLabel_5.Font = Enum.Font.SourceSans
+		Launcher.TextLabel_5.Text = "Ez Hub"
+		Launcher.TextLabel_5.TextColor3 = Color3.fromRGB(92, 106, 124)
+		Launcher.TextLabel_5.TextSize = 14.000
+	
+		Launcher.UICorner_8.CornerRadius = UDim.new(0, 4)
+		Launcher.UICorner_8.Parent = Launcher.ServerStatusSection
+	
+		Launcher.EzCMDStatus.Name = "EzCMDStatus"
+		Launcher.EzCMDStatus.Parent = Launcher.ServerStatusSection
+		Launcher.EzCMDStatus.AnchorPoint = Vector2.new(0.5, 0.5)
+		Launcher.EzCMDStatus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.EzCMDStatus.BackgroundTransparency = 1.000
+		Launcher.EzCMDStatus.Position = UDim2.new(0.698461592, 0, 0.758620679, 0)
+		Launcher.EzCMDStatus.Size = UDim2.new(0, 50, 0, 30)
+		Launcher.EzCMDStatus.Font = Enum.Font.SourceSans
+		Launcher.EzCMDStatus.Text = "Online"
+		Launcher.EzCMDStatus.TextColor3 = Color3.fromRGB(45, 192, 179)
+		Launcher.EzCMDStatus.TextSize = 22.000
+	
+		Launcher.EzHubStatus.Name = "EzHubStatus"
+		Launcher.EzHubStatus.Parent = Launcher.ServerStatusSection
+		Launcher.EzHubStatus.AnchorPoint = Vector2.new(0.5, 0.5)
+		Launcher.EzHubStatus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.EzHubStatus.BackgroundTransparency = 1.000
+		Launcher.EzHubStatus.Position = UDim2.new(0.297820538, 0, 0.758620679, 0)
+		Launcher.EzHubStatus.Size = UDim2.new(0, 50, 0, 30)
+		Launcher.EzHubStatus.Font = Enum.Font.SourceSans
+		Launcher.EzHubStatus.Text = "Online"
+		Launcher.EzHubStatus.TextColor3 = Color3.fromRGB(45, 192, 179)
+		Launcher.EzHubStatus.TextSize = 22.000
+	
+		Launcher.EzCMDSection.Name = "EzCMDSection"
+		Launcher.EzCMDSection.Parent = Launcher.AnimFrame1
+		Launcher.EzCMDSection.AnchorPoint = Vector2.new(0.5, 0.5)
+		Launcher.EzCMDSection.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
+		Launcher.EzCMDSection.BorderSizePixel = 0
+		Launcher.EzCMDSection.Position = UDim2.new(0.736070395, 0, 0.696402788, 0)
+		Launcher.EzCMDSection.Size = UDim2.new(0, 150, 0, 116)
+	
+		Launcher.SectionEs_3.Name = "SectionEs"
+		Launcher.SectionEs_3.Parent = Launcher.EzCMDSection
+	
+		Launcher.Frame_7.Parent = Launcher.SectionEs_3
+		Launcher.Frame_7.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+		Launcher.Frame_7.Size = UDim2.new(0, 2, 0, 36)
+	
+		Launcher.UICorner_9.Parent = Launcher.Frame_7
+	
+		Launcher.Frame_8.Parent = Launcher.SectionEs_3
+		Launcher.Frame_8.BackgroundColor3 = Color3.fromRGB(112, 112, 112)
+		Launcher.Frame_8.BackgroundTransparency = 0.750
+		Launcher.Frame_8.BorderSizePixel = 0
+		Launcher.Frame_8.Position = UDim2.new(0, 0, 0.294290125, 0)
+		Launcher.Frame_8.Size = UDim2.new(1, 0, 0, 1)
+	
+		Launcher.TextLabel_6.Parent = Launcher.SectionEs_3
+		Launcher.TextLabel_6.AnchorPoint = Vector2.new(1, 0)
+		Launcher.TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.TextLabel_6.BackgroundTransparency = 1.000
+		Launcher.TextLabel_6.Position = UDim2.new(1, 0, 0.0439999998, 0)
+		Launcher.TextLabel_6.Size = UDim2.new(0.899999976, 0, 0, 24)
+		Launcher.TextLabel_6.Font = Enum.Font.SourceSans
+		Launcher.TextLabel_6.Text = "Ez CMD"
+		Launcher.TextLabel_6.TextColor3 = Color3.fromRGB(211, 216, 226)
+		Launcher.TextLabel_6.TextSize = 14.000
+		Launcher.TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
+	
+		Launcher.UICorner_10.CornerRadius = UDim.new(0, 4)
+		Launcher.UICorner_10.Parent = Launcher.EzCMDSection
+	
+		Launcher.LaunchEzCMD.Name = "LaunchEzCMD"
+		Launcher.LaunchEzCMD.Parent = Launcher.EzCMDSection
+		Launcher.LaunchEzCMD.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+		Launcher.LaunchEzCMD.Position = UDim2.new(0, 10, 0.720000029, 0)
+		Launcher.LaunchEzCMD.Size = UDim2.new(0, 86, 0, 22)
+		Launcher.LaunchEzCMD.Font = Enum.Font.SourceSans
+		Launcher.LaunchEzCMD.Text = "Launch"
+		Launcher.LaunchEzCMD.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.LaunchEzCMD.TextSize = 14.000
+	
+		Launcher.UICorner_11.CornerRadius = UDim.new(0, 4)
+		Launcher.UICorner_11.Parent = Launcher.LaunchEzCMD
+	
+		Launcher.VersionSelectorEzCMD.Name = "VersionSelectorEzCMD"
+		Launcher.VersionSelectorEzCMD.Parent = Launcher.EzCMDSection
+		Launcher.VersionSelectorEzCMD.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.VersionSelectorEzCMD.BackgroundTransparency = 1.000
+		Launcher.VersionSelectorEzCMD.Position = UDim2.new(0, 10, 0.414000005, 0)
+		Launcher.VersionSelectorEzCMD.Size = UDim2.new(0, 86, 0, 28)
+	
+		Launcher.Left_2.Name = "Left"
+		Launcher.Left_2.Parent = Launcher.VersionSelectorEzCMD
+		Launcher.Left_2.AnchorPoint = Vector2.new(0, 0.5)
+		Launcher.Left_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.Left_2.BackgroundTransparency = 1.000
+		Launcher.Left_2.Position = UDim2.new(0, 0, 0.5, 0)
+		Launcher.Left_2.Size = UDim2.new(0, 20, 0, 20)
+		Launcher.Left_2.Font = Enum.Font.SourceSans
+		Launcher.Left_2.Text = "<"
+		Launcher.Left_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.Left_2.TextSize = 14.000
+	
+		Launcher.Display_2.Name = "Display"
+		Launcher.Display_2.Parent = Launcher.VersionSelectorEzCMD
+		Launcher.Display_2.AnchorPoint = Vector2.new(0.5, 0.5)
+		Launcher.Display_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.Display_2.BackgroundTransparency = 1.000
+		Launcher.Display_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+		Launcher.Display_2.Size = UDim2.new(0, 55, 0, 20)
+		Launcher.Display_2.Font = Enum.Font.SourceSans
+		Launcher.Display_2.Text = "N/A"
+		Launcher.Display_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.Display_2.TextSize = 14.000
+	
+		Launcher.Right_2.Name = "Right"
+		Launcher.Right_2.Parent = Launcher.VersionSelectorEzCMD
+		Launcher.Right_2.AnchorPoint = Vector2.new(1, 0.5)
+		Launcher.Right_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.Right_2.BackgroundTransparency = 1.000
+		Launcher.Right_2.Position = UDim2.new(1, 0, 0.5, 0)
+		Launcher.Right_2.Size = UDim2.new(0, 20, 0, 20)
+		Launcher.Right_2.Font = Enum.Font.SourceSans
+		Launcher.Right_2.Text = ">"
+		Launcher.Right_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Launcher.Right_2.TextSize = 14.000
+	
+		-----------------------------------------------------------------------------
+	
+		-- Start-Up Animations
+	
+		Launcher.MainFrame.Size = UDim2.new(0,0,0,0)
+		Launcher.MainFrame.ClipsDescendants = true
+		Launcher.MainFrame:TweenSize(UDim2.new(0, 410, 0, 278), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 1, true)
+	
+		for i,v in pairs(Launcher.MainFrame:GetChildren()) do
+			if v:IsA("Frame") and string.find(v.Name:lower(), "animframe") then
+				v.Visible = true
+				v.Position = UDim2.new(1, 0, 0, 0)
+			end
+		end
+	
+		Launcher.SideFrame.Position = UDim2.new(0, 0, 1, 0)
+	
+		local PanelInfo = game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Main'),true)
+		local FormattedInfo = string.split(PanelInfo, ", ")
+		local thumbType = Enum.ThumbnailType.HeadShot
+		local thumbSize = Enum.ThumbnailSize.Size420x420
+		local content, isReady = game:GetService("Players"):GetUserThumbnailAsync(game:GetService("Players").LocalPlayer.UserId, thumbType, thumbSize)
+		repeat wait() until isReady
+		wait(1)
+	
+		Launcher.SideFrame:TweenPosition(UDim2.new(0,0,0,0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 1, true)
+		Launcher.AnimFrame1:TweenPosition(UDim2.new(0.168, 0, 0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 1, true)
+	
+		-----------------------------------------------------------------------------
+	
+		-- Backwards compatibility (EZ HUB)
+	
+		do
+			local a;
+			a = hookfunction(game.HttpGet, function(self, url)
+				if url == "https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/ExclusivesModule.txt" then
+					url = "https://raw.githubusercontent.com/debug420/Ez-Hub/master/Modules/ExclusiveV1.json"
+				elseif url == "https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/ExclusivesV2Module.txt" then
+					url = "https://raw.githubusercontent.com/debug420/Ez-Hub/master/Modules/ExclusivesV2.json"
+				elseif url == "https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/EzLib.lua" then
+					url = "https://raw.githubusercontent.com/debug420/Ez-Hub/master/Modules/EzLib.lua"
+				elseif url == "https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/RepostedModule.txt" then
+					url = "https://raw.githubusercontent.com/debug420/Ez-Hub/master/Modules/RepostedModule.json"
+				elseif url == "https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/lexermodule.lua" then
+					url = "https://raw.githubusercontent.com/debug420/Ez-Hub/master/Modules/LexerModule.lua"
+				end
+				return a(self, url)
+			end)
+		end
+	
+		-----------------------------------------------------------------------------
+	
+		local function AppColor(box)
+			local t = box.Text:lower()
+			if t == "online" then
+				return Color3.fromRGB(45, 192, 179)
+			elseif t == "maintenance" or t == "updating" then
+				return Color3.fromRGB(192, 177, 14)
+			elseif t == "offline" or "down" then
+				return Color3.fromRGB(192, 49, 52)
+			end
+			return Color3.fromRGB(45, 192, 179);
+		end
+	
+		Launcher.EzHubStatus.Text = FormattedInfo[2]:gsub("%s+", "")
+		Launcher.EzCMDStatus.Text = FormattedInfo[3]:gsub("%s+", "")
+		Launcher.EzCMDStatus.TextColor3 = AppColor(Launcher.EzCMDStatus)
+		Launcher.EzHubStatus.TextColor3 = AppColor(Launcher.EzHubStatus)
+		Launcher.PlayerPicture.Image = content
+	
+		-----------------------------------------------------------------------------
+	
+		-- Apply Version Selection Func
+	
+		local EzHubV = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Versions"))
+	
+		local EzCMDV = {}
+	
+		function GetValWithIndex(ind, t)
+			for i,v in pairs(t) do
+				if v[1] == ind then
+					return {i, v};
+				end
+			end	
+		end
+	
+		function GetLargestIndex(t)
+			local l = 0
+			for i,v in pairs(t) do
+				if v[1] > l then l = v[1] end
+			end
+			return l;
+		end
+	
+		local SelectedEzCMDV = "https://raw.githubusercontent.com/debug420/Ez-CMD/master/EzCMD.lua"
+		local SelectedEzHubV = (function() for i,v in pairs(EzHubV) do 
+				if v[1] == GetLargestIndex(EzHubV) then
+					return v[2];
+				end		
+			end end)()
+	
+	
+	
+		function ApplyVSF(Frame, t)
+			assert(Frame.Display, "Invalid Frame supplied to VSF Func")
+			assert(Frame.Left, "Invalid Frame supplied to VSF Func")
+			assert(Frame.Right, "Invalid Frame supplied to VSF Func")
+	
+			local IndexVal = Instance.new("IntValue", Frame)
+			IndexVal.Value = GetLargestIndex(t)
+			Frame.Display.Text = "V "..GetValWithIndex(GetLargestIndex(t), t)[1]
+			Frame.Left.MouseButton1Click:Connect(function()
+				if IndexVal.Value > 1 then
+					IndexVal.Value = IndexVal.Value - 1
+				else
+					IndexVal.Value = GetLargestIndex(t)
+				end
+	
+				Frame.Display.Text = "V "..GetValWithIndex(IndexVal.Value, t)[1]
+			end)
+			Frame.Right.MouseButton1Click:Connect(function()
+				if IndexVal.Value < GetLargestIndex(t) then
+					IndexVal.Value = IndexVal.Value + 1
+				else
+					IndexVal.Value = 1
+				end
+	
+				Frame.Display.Text = "V "..GetValWithIndex(IndexVal.Value, t)[1]
+			end)
+		end
+	
+		ApplyVSF(Launcher.VersionSelectorEzHub, EzHubV);
+	
+		-----------------------------------------------------------------------------
+	
+		-- Launch
+	
+		local launchdebounce = true
+	
+		Launcher.LaunchEzHub.MouseButton1Click:Connect(function()
+	
+			if Launcher.EzHubStatus.TextColor3 == Color3.fromRGB(192, 49, 52) or Launcher.EzHubStatus.TextColor3 == Color3.fromRGB(192, 177, 14) then
+				if launchdebounce then
+					launchdebounce = false
+					Launcher.LaunchEzHub.Text = "Service Down"
+					wait(1)
+					game.StarterGui:SetCore("SendNotification", {
+						Title = "Ez Industries",
+						Text = "Ez Hub is currently offline. Join Discord for more info."
+					})
+					Launcher.LaunchEzHub.Text = "Launch"
+					launchdebounce = true
+					return;
+				end
+			end
+	
+			if launchdebounce then
+				SelectedEzHubV = EzHubV[Launcher.VersionSelectorEzHub.Display.Text:gsub("V ", "")][2]
+				launchdebounce = false
+				Launcher.LaunchEzHub.Text = "Launching..."
+				pcall(function() loadstring(game:HttpGet(SelectedEzHubV))() end)
+				Launcher.LaunchEzHub.Text = "Launch"
+				launchdebounce = true
+			end
+	
+		end)
+	
+		Launcher.LaunchEzCMD.MouseButton1Click:Connect(function()
+			if launchdebounce then
+				launchdebounce = false
+				Launcher.LaunchEzCMD.Text = "Launching..."
+				pcall(function() loadstring(game:HttpGet(SelectedEzCMDV))() end)
+				Launcher.LaunchEzCMD.Text = "Launch"
+				launchdebounce = true
+			end
+		end)
+	
+		-----------------------------------------------------------------------------
+	
+		-- Tab System
+	
+		local tabdebounce = true
+		function OpenTab(tabtoclose, taptoopen)
+			if tabtoclose then
+				tabtoclose:TweenPosition(UDim2.new(1, 0, 0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.5, true)
+				wait(0.5)
+			end
+			if taptoopen then
+				taptoopen:TweenPosition(UDim2.new(0.168, 0, 0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.5, true)
+			end
+		end
+	
+		function LaunchPageF()
+			if tabdebounce == false then return end;
+			tabdebounce = false
+			spawn(function()
+				OpenTab(Launcher.AnimFrame2, Launcher.AnimFrame1)
+			end)
+			Launcher.LaunchPage.BackgroundTransparency = 0
+			Launcher.SettingPage.BackgroundTransparency = 1
+	
+			Launcher.LaunchPage.Frame.Visible = true
+			Launcher.SettingPage.Frame.Visible = false
+			wait(1)
+			tabdebounce = true
+		end
+	
+		function SettingPageF()
+			if tabdebounce == false then return end;
+			tabdebounce = false
+			spawn(function()
+				OpenTab(Launcher.AnimFrame1, Launcher.AnimFrame2)
+			end)
+			Launcher.LaunchPage.BackgroundTransparency = 1
+			Launcher.SettingPage.BackgroundTransparency = 0
+	
+			Launcher.LaunchPage.Frame.Visible = false
+			Launcher.SettingPage.Frame.Visible = true
+			wait(1)
+			tabdebounce = true
+		end
+	
+		Launcher.LaunchPage.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 then
+				LaunchPageF()
+			end
+		end)
+	
+		Launcher.SettingPage.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 then
+				SettingPageF()
+			end
+		end)
+	
+		Launcher.LaunchPage.Image.MouseButton1Click:Connect(function()
+			LaunchPageF()
+		end)
+	
+		Launcher.SettingPage.Image.MouseButton1Click:Connect(function()
+			SettingPageF()
+		end)
+	
+		-----------------------------------------------------------------------------
+	
+		-- Close
+	
+		Launcher.Close.MouseButton1Click:Connect(function()
+			Launcher.Launcher:Destroy()
+		end)
+	
+		-----------------------------------------------------------------------------
+	
+		-- Draggability
+	
+		local function dragify(MainFrame)
+	
+			local dragging
+			local dragInput
+			local dragStart
+			local startPos
+	
+			local function update(input)
+				Delta = input.Position - dragStart
+				Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+				game:GetService("TweenService"):Create(MainFrame, TweenInfo.new(.25), {Position = Position}):Play()
+			end
+	
+			MainFrame.InputBegan:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+					dragging = true
+					dragStart = input.Position
+					startPos = MainFrame.Position
+	
+					input.Changed:Connect(function()
+						if input.UserInputState == Enum.UserInputState.End then
+							dragging = false
+						end
+					end)
+				end
+			end)
+	
+			MainFrame.InputChanged:Connect(function(input)
+				if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+					dragInput = input
+				end
+			end)
+	
+			game:GetService("UserInputService").InputChanged:Connect(function(input)
+				if input == dragInput and dragging then
+					update(input)
+				end
+			end)
+		end
+	
+		dragify(Launcher.MainFrame)
+	end)
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Active = false
+		wait(3)
+		script.Parent.Active = true
+	end)
+end
+coroutine.wrap(DKRBBV_fake_script)()
+local function NVIQC_fake_script() -- Profile.LocalScript 
+	local script = Instance.new('LocalScript', Profile)
+
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	
+	script.Parent.Image = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+end
+coroutine.wrap(NVIQC_fake_script)()
+local function SHHJCO_fake_script() -- TextLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_2)
+
+	script.Parent.Text = [[Welcome to SimpleZ, ]].. game.Players.LocalPlayer.Name
+end
+coroutine.wrap(SHHJCO_fake_script)()
+local function TPZAJPT_fake_script() -- TextLabel5.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel5)
+
+	local t = 5;
+	
+	while wait() do
+		local hue = tick() % t / t
+		local color = Color3.fromHSV(hue,1,1) 
+		script.Parent.TextColor3 = color
+	end
+end
+coroutine.wrap(TPZAJPT_fake_script)()
